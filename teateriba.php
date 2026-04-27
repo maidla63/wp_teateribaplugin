@@ -1,12 +1,17 @@
 <?php
-
+/**
+ * Plugin Name: Anri Teateriba
+ * Description: Kuvab lehe ülaosas kohandatava teateriba.
+ * Version: 1.0
+ * Author: Anri Maidla
+ */
 
 add_action('admin_menu', 'teateriba_lisa_menuu');
 
 function teateriba_lisa_menuu() {
     add_menu_page(
         'Teateriba seaded',
-        '[Sinu Nimi] teateriba', 
+        '[Sinu Nimi] teateriba',
         'manage_options',
         'teateriba-seaded',
         'teateriba_seadete_leht',
@@ -62,7 +67,7 @@ add_action('wp_body_open', 'teateriba_kuva_riba');
 
 function teateriba_kuva_riba() {
     $ainult_avaleht = get_option('tr_ainult_avaleht', 0);
-    
+
     if ($ainult_avaleht && !is_front_page()) {
         return;
     }
