@@ -17,7 +17,3 @@ Plugin lisab WordPressi admin-paneeli eraldi seadete lehe (" teateriba"), kus sa
 ## 📁 Failid
 * `teateriba.php` – Kogu plugina loogika, admin-liides ja CSS/JS kuvamine.
 * `README.md` – See sama dokument siin.
----
-**Autor:** Anri Maidla  
-**Kursus:** IT25  
-**Kool:** Haapsalu Kutsehariduskeskus
